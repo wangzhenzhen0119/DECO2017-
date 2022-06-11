@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud</title>
+    <link rel="stylesheet" href="styles/styles.scss" />
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2>StudBud</h2>
+            <ul>
+                <li class="navIndex navdi"><a href="index.html">Task</a></li>
+                <li class="navTimer"><a href="timer.html">Timing</a></li>
+                <li class="navContent"><a href="content.html">Content</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="add">
+                <p><img src="images/add.svg"></p>
+            </div>
+            <div class="inner">
+                <div class="todotitle">
+                    <p>TO-DO-LIST</p>
+                </div>
+                <div class="todolist">
+                    <ol id="todo"></ol>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="dotitle">
+                    <p>HISTORY</p>
+                </div>
+                <div class="dolist">
+                    <ol id="notdo"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="addform">
+        <div class="addper">
+            <h3>task add</h3>
+        </div>
+        <div class="addper">
+            <input type="text" id="taskname"  placeholder="name">
+        </div>
+        <div class="addper">
+            <input type="text" id="day"  placeholder="day"> 
+            <input type="text" id="month"  placeholder="month"> 
+            <input type="text" id="year"  placeholder="year">
+        </div>
+        <div class="addper">
+            <select id="rating">
+                <option value="Low">Low</option>
+                <option value="Med">Med</option>
+                <option value="High">High</option>
+            </select> 
+            <input type="text" id="esimated" placeholder="Estimated time to complete">
+        </div>
+        <div class="addper">
+            <button id="back"><img src="images/return.svg"></button> <button id="sub"><img src="images/check2.svg"></button>
+        </div>
+        
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
