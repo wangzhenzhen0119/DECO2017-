@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud</title>
+    <link rel="stylesheet" href="styles/styles.scss" />
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2>StudBud</h2>
+            <ul>
+                <li class="navIndex navdi"><a href="index.html">Task</a></li>
+                <li class="navTimer"><a href="timer.html">Timing</a></li>
+                <li class="navContent"><a href="content.html">Content</a></li>
+            </ul>
+
+        </div>
+        <div class="content">
+            <div id="timer">00:00</div>
+            <div class="button">
+                <button id="play"><img src="images/play.svg" id="playImg"></button>
+                <button id="pause"><img src="images/pause.svg" id="pauseImg"></button>
+                <button id="music"><img src="images/music.svg"></button>
+                <button id="stop"><img src="images/stop.svg"></button>
+            </div>
+        </div>
+    </div>
+    <audio src="mp3/1.mp3" id="music1" controls="controls" loop="false" hidden="true"></audio>
+    <audio src="mp3/2.mp3" id="music2" controls="controls" loop="false" hidden="true"></audio>
+    <div id="musiclist">
+        <p id="m1">music one</p>
+        <p id="m2">music two</p>
+    </div>
+    <div id="musiclistmenu">
+        <p><img src="images/return.svg"></p>
+    </div>
+    <script src="js/timer.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>
